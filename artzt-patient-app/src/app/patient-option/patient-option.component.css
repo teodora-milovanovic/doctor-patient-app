@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+button {
+    background-color: rgb(221, 252, 118);
+    color: black;
+    height: 80px;
+    width: 230px; 
+}
+
+.goToForm{
+    font-size: 25px;
+}
+
+.goToDetails {
+    font-size: 22px;
+}
+
+.options {
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.Detail {
+    margin-left: 170px;
+}
+.Form {
+    margin-left: 40px;
+}
+
+p {
+    margin-top: 30px;
+}

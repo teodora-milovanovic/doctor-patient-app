@@ -1,0 +1,289 @@
+<div class="page">
+  <h1>Folgende Fragen beziehen sich auf die heutige Symptome:</h1>
+  <form (submit)="submit($event)">
+    <ul class="form-style-1">
+      <li><label>1a. Wie würden sie ihre Stimmung heute auf einer Skala von 1-10 bewerten? </label>
+        <form>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="1" [(ngModel)]="mood"> 1
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="2" [(ngModel)]="mood"> 2
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="3" [(ngModel)]="mood"> 3
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="4" [(ngModel)]="mood"> 4
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="5" [(ngModel)]="mood"> 5
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="6" [(ngModel)]="mood"> 6
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="7" [(ngModel)]="mood"> 7
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="8" [(ngModel)]="mood"> 8
+          </label>
+          <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="9" [(ngModel)]="mood"> 9
+          </label> <label class="radio-inline">
+            <input id="mood" type="radio" name="optradio" [value]="10" [(ngModel)]="mood"> 10
+          </label>
+        </form>
+
+      </li>
+
+
+      <li>
+        <label>1b. Falls die Stimmung in irgendeiner Richtung extrem war, schreiben sie einen dominanten Gedanken auf
+          oder den Grund bzw. den Ereignis, der dazu geführt hat:</label>
+        <textarea id="moodText" name="field5" class="field-long field-textarea"></textarea>
+      </li>
+
+
+      <li><label>2. Wie würden sie ihre heutige Aktivitätsniveau und Motivation auf einer Skala von 1-10 bewerten?
+        </label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="1" [(ngModel)]="activityLevel"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="2" [(ngModel)]="activityLevel"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="3" [(ngModel)]="activityLevel"> 3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="4" [(ngModel)]="activityLevel"> 4
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="5" [(ngModel)]="activityLevel"> 5
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="6" [(ngModel)]="activityLevel"> 6
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="7" [(ngModel)]="activityLevel"> 7
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="8" [(ngModel)]="activityLevel"> 8
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="9" [(ngModel)]="activityLevel"> 9
+          </label> <label class="radio-inline">
+            <input type="radio" id="activity" name="optradio" [value]="10" [(ngModel)]="activityLevel"> 10
+          </label>
+        </form>
+
+
+
+      <li><label>3. Wie würden sie ihren Appetit heute auf einer Skala von 1-10 bewerten?</label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="1" [(ngModel)]="appetit"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="2" [(ngModel)]="appetit"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="3" [(ngModel)]="appetit"> 3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="4" [(ngModel)]="appetit"> 4
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="5" [(ngModel)]="appetit"> 5
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="6" [(ngModel)]="appetit"> 6
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="7" [(ngModel)]="appetit"> 7
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="8" [(ngModel)]="appetit"> 8
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="9" [(ngModel)]="appetit"> 9
+          </label> <label class="radio-inline">
+            <input type="radio" id="appetit" name="optradio" [value]="10" [(ngModel)]="appetit"> 10
+          </label>
+        </form>
+
+      </li>
+      <li><label>4. Wie würden sie auf einer Skala von 1-10 heutige Anwesenheit des Morgentiefs bewerten?</label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="1" [(ngModel)]="morningLow"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="2" [(ngModel)]="morningLow"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="3" [(ngModel)]="morningLow"> 3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="4" [(ngModel)]="morningLow"> 4
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="5" [(ngModel)]="morningLow"> 5
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="6" [(ngModel)]="morningLow"> 6
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="7" [(ngModel)]="morningLow"> 7
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="8" [(ngModel)]="morningLow"> 8
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="9" [(ngModel)]="morningLow"> 9
+          </label> <label class="radio-inline">
+            <input type="radio" id="morningLow" name="optradio" [value]="10" [(ngModel)]="morningLow"> 10
+          </label>
+        </form>
+
+      </li>
+      <li><label>5a. Wie würden sie ihre Schlafqualität in letzter Nacht auf einer Skala von 1-10 bewerten? </label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="1" [(ngModel)]="sleepQuality"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="2" [(ngModel)]="sleepQuality"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="3" [(ngModel)]="sleepQuality"> 3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="4" [(ngModel)]="sleepQuality"> 4
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="5" [(ngModel)]="sleepQuality"> 5
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="6" [(ngModel)]="sleepQuality"> 6
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="7" [(ngModel)]="sleepQuality"> 7
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="8" [(ngModel)]="sleepQuality"> 8
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="9" [(ngModel)]="sleepQuality"> 9
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepQuality" name="optradio" [value]="10" [(ngModel)]="sleepQuality"> 10
+          </label>
+        </form>
+
+      </li>
+      <li><label>5b. Wählen sie die Art ihrer Schlafstörung:</label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="sleepDisorder" name="optradio" value="Frühmorgendliches Erwachen"
+              [(ngModel)]="sleepDisorder"> Frühmorgendliches Erwachen
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepDisorder" name="optradio" value="Durchschlafstörung"
+              [(ngModel)]="sleepDisorder"> Durchschlafstörung
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="sleepDisorder" name="optradio" value="Einschlafstörung" [(ngModel)]="sleepDisorder">
+            Einschlafstörung
+          </label>
+        </form>
+
+      </li>
+      <li><label>6. Bewerten sie auf einer Skala von 1-10 die heutige Anwesenheit von sonstigen körperlichen Symptomen,
+          die bei ihren depressiven Stimmung typischerweise vorkommen: </label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="1" [(ngModel)]="otherBodySymptoms"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="2" [(ngModel)]="otherBodySymptoms"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="3" [(ngModel)]="otherBodySymptoms"> 3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="4" [(ngModel)]="otherBodySymptoms"> 4
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="5" [(ngModel)]="otherBodySymptoms"> 5
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="6" [(ngModel)]="otherBodySymptoms"> 6
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="7" [(ngModel)]="otherBodySymptoms"> 7
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="8" [(ngModel)]="otherBodySymptoms"> 8
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="9" [(ngModel)]="otherBodySymptoms"> 9
+          </label> <label class="radio-inline">
+            <input type="radio" id="otherBodySymptoms" name="optradio" [value]="10" [(ngModel)]="otherBodySymptoms"> 10
+          </label>
+        </form>
+
+      </li>
+
+
+      <li><label>7. Bewerten sie auf einer Skala von 1-10 die heutige Anwesenheit von Selbstmordgedanken:</label>
+        <form (submit)="submit($event)">
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="1" [(ngModel)]="thoughtsOfSuicide"> 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="2" [(ngModel)]="thoughtsOfSuicide"> 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="3" [(ngModel)]="thoughtsOfSuicide"> 3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="4" [(ngModel)]="thoughtsOfSuicide"> 4
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="5" [(ngModel)]="thoughtsOfSuicide"> 5
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="6" [(ngModel)]="thoughtsOfSuicide"> 6
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="7" [(ngModel)]="thoughtsOfSuicide"> 7
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="8" [(ngModel)]="thoughtsOfSuicide"> 8
+          </label>
+          <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="9" [(ngModel)]="thoughtsOfSuicide"> 9
+          </label> <label class="radio-inline">
+            <input type="radio" id="thoughtsOfSuicide" name="optradio" [value]="10" [(ngModel)]="thoughtsOfSuicide"> 10
+          </label>
+        </form>
+
+      </li>
+      <li>
+        <label>8a. Tragen sie den heutigen genommenen Medikament in die untenstehende Box:</label>
+        <input type="text" id="drugs" name="field3" class="field-long" />
+        <label>8b. Tragen sie die Dosis des genommenen Medikaments in die untenstehende Box: </label>
+        <input type="text" id="dosesOfMedication" name="field3" class="field-long" />
+      </li>
+
+
+      <li>
+        <input type="submit" value="Submit">
+      </li>
+    </ul>
+  </form>
+  <h3>Sie können ihre Daten unter der Option "Meine Daten" ansehen!</h3>
+</div>

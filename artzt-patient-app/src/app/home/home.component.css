@@ -1,0 +1,59 @@
+
+
+.logo{
+    
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-left: 5px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(221, 252, 118);
+    text-decoration-style: solid; 
+    
+}
+
+.title {
+    background-color: rgba(240, 243, 243, 0.979);
+    padding: 100px;
+    text-align: center;
+    font-weight: 150px;
+    color: black;
+    font-size: 100px;
+    
+}
+
+.title h1{
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+}
+button {
+    background-color: rgb(221, 252, 118);
+    color: black;
+    margin-top: 20px;
+    height: 1cm;
+    width: 3cm;
+}
+
+
+#homeSeite {
+    margin-bottom: 20px;
+}
+
+#footer{
+	width:100%;
+	background-color:#252525;
+	color:#fff;
+    padding:40px 0px;
+    margin-top: 110px;
+    
+}
+#copy{
+	float:left;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,10 @@
+<h1>Meine Patienten:</h1>
+<div>
+  <ul>
+    <li *ngFor="let patient of patientsOfDoctor" (click)="onSelect(patient.id)">
+      <a>
+        <span>{{patient.firstName}} </span> {{patient.lastName}}
+      </a>
+    </li>
+  </ul>
+</div>

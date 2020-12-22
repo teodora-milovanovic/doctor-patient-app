@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+div {
+    background-color: rgb(221, 252, 118);
+    height: 280px;
+}
+
+ul {
+    text-align: center;
+    color: black;
+    background-color: rgb(221, 252, 118);
+    list-style-position: inside;
+    padding-top: 30px;
+}  
+
+li {
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+
+
+
+

@@ -1,0 +1,85 @@
+<div class="Seite">
+  <div class="Anzeige">
+    <ul style="list-style-type:none">
+      <li *ngFor="let data of barChartData">
+        <canvas baseChart [datasets]="data" [labels]="barChartLabels" [options]="barChartOptions"
+          [legend]="barChartLegend" [chartType]="barChartType"></canvas>
+
+        <div *ngIf="data[0].hasText">
+          <div *ngIf="data[0].moodText">
+            <button (click)="showMoodTableOnClick()">Beschreibung der Stimmung</button>
+            <table *ngIf="showMoodTable" mat-table [dataSource]="moodDataUI" class="mat-elevation-z8">
+              <!-- Position Column -->
+              <ng-container matColumnDef="datum">
+                <th mat-header-cell *matHeaderCellDef> Datum </th>
+                <td mat-cell *matCellDef="let element"> {{element.datum}} </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="mood">
+                <th mat-header-cell *matHeaderCellDef> Stimmung </th>
+                <td mat-cell *matCellDef="let element"> {{element.mood}} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumnsMoodText"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumnsMoodText;"></tr>
+            </table>
+          </div>
+          <div *ngIf="data[0].sleepText">
+            <button (click)="showSleepTableOnClick()">Art der Schlafstörung</button>
+            <table id="sleepTable" *ngIf="showSleepTable" mat-table [dataSource]="sleepDataUI" class="mat-elevation-z8">
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="datum">
+                <th mat-header-cell *matHeaderCellDef> Datum </th>
+                <td mat-cell *matCellDef="let element"> {{element.datum}} </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="sleep">
+                <th mat-header-cell *matHeaderCellDef> Art der Schlafstörung </th>
+                <td mat-cell *matCellDef="let element"> {{element.sleep}} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumnsSleepText"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumnsSleepText;"></tr>
+            </table>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <button (click)="showMedicationTableOnClick()">Medikamente und Dosen</button>
+    <div *ngIf="showMedicationTable">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="datum">
+          <th mat-header-cell *matHeaderCellDef> Datum </th>
+          <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="medikament">
+          <th mat-header-cell *matHeaderCellDef> Medikament </th>
+          <td mat-cell *matCellDef="let element"> {{element.drug}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="dosis">
+          <th mat-header-cell *matHeaderCellDef> Medikamentendose </th>
+          <td mat-cell *matCellDef="let element"> {{element.doses}} </td>
+        </ng-container>
+
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</div>
